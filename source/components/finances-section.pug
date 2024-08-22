@@ -1,0 +1,46 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-s-36.font-w-black.text-center.color-text
+        | «BIG BOSS»: уже 4 года ведем 
+        br.no-br
+        | успешную работу бизнеса
+      .finances-section__sub-title.font-w-semi-bold.font-s-20.text-center.color-text
+        | Показатели франшизы, которые подтверждают эффективность 
+        br.no-br
+        | запуска детского клуба по нашей бизнес-модели*
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-26 12 месяцев
+            .font-w-medium.font-s-18 средний срок <br> окупаемости клуба
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-26 72 дня
+            .font-w-medium.font-s-18 потребуется для старта <br> бизнеса
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-26 с 1 месяца
+            .font-w-medium.font-s-18 работы вы начнете <br> получать прибыль
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-26 872 000 рублей
+            .font-w-medium.font-s-18 средняя ежемесячная <br> выручка
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-26 39%
+            .font-w-medium.font-s-18 рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-26 340 000 рублей
+            .font-w-medium.font-s-18 средняя ежемесячная <br> чистая прибыль
+        .finances-pagination.swiper-progress-finances
+      .finances-section__text.font-w-regular.font-s-16
+        | *Приведены данные, актуальные для городов с населением до 500 тысяч жителей
+      .finances-section__bottom
+        img.finances-section__bottom-icon(src="images/finances-section-bottom-icon.png" loading="lazy" width="456" height="416" alt="icon")
+        .font-w-extra-bold.font-s-30.text-center
+          | Узнайте, какими будут подробные расчеты 
+          br.no-br
+          | для вашего города и под ваш бюджет
+        .finances-section__bottom-text.font-w-medium.font-s-18.text-center
+          | Получите финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input.input.finances-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.finances-item(type="submit") Получить

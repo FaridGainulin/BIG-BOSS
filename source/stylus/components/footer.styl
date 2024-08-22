@@ -1,0 +1,46 @@
+.footer
+  // background-image: url('../images/footer-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  // background-color #303030
+
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      justify-content space-between
+      flex-direction: row
+    +above($breakpoints.xxl)
+      padding-bottom 0
+
+
+  &__logo
+    width 90px
+    height: auto
+    +above($breakpoints.sm)
+      width 100px
+    +above($breakpoints.md)
+      width 120px
+    +above($breakpoints.xxl)
+      width 139px
+
+  &__brand
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 6px
+
+  &__brand-name
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      color: #d3cde9;
+
+  &__privacy
+    color: #31E601
+    cursor pointer
+    text-decoration: none

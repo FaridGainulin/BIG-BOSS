@@ -1,0 +1,176 @@
+.reasons-section
+  background-image: url('../images/reasons-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #0B0C09
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 50px 0
+    +above($breakpoints.md)
+      padding 90px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 144px 0 149px 0
+
+  &__img-flower
+    position: absolute
+    width 100px
+    height: auto
+    top: 20px;
+    right: -51px;
+    +above($breakpoints.sm)
+      width: 200px;
+      top: 20px;
+      right: -110px;
+    +above($breakpoints.md)
+      width: 300px;
+      top: 37px;
+      right: -175px;
+    +above($breakpoints.xxl)
+      width: 429px;
+      top: 74px;
+      right: -249px;
+
+  &__img-round
+    position: absolute
+    height: auto
+    width: 100px;
+    bottom: 12px;
+    left: -41px;
+    +above($breakpoints.sm)
+      width: 99px;
+      bottom: 12px;
+      left: -36px;
+    +above($breakpoints.md)
+      width: 164px;
+      bottom: 12px;
+      left: -70px;
+    +above($breakpoints.xxl)
+      width: 308px;
+      bottom: 12px;
+      left: -133px;
+
+  &__title
+    text-align: center
+    padding 0 0 20px 0
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 50px 0
+    +above($breakpoints.xxl)
+      text-align: start
+      padding 0 0 76px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content center
+      gap: 10px
+      +above($breakpoints.xxl)
+        gap: 20px
+
+  &__card
+    color: #0A2520
+    width 300px !important
+    padding 20px 15px 20px 15px
+    border-radius: 20px
+    +above($breakpoints.sm)
+      width 350px !important
+      padding 30px 10px 30px 20px
+    +above($breakpoints.md)
+      width 476px !important
+      padding 30px 10px 40px 30px
+    +above($breakpoints.xxl)
+      padding 30px 10px 69px 30px
+      width 580px !important
+
+  &__card-title
+    padding 20px 0 14px 0
+    +above($breakpoints.sm)
+      padding 40px 0 14px 0
+    +above($breakpoints.md)
+      padding 50px 0 14px 0
+    +above($breakpoints.xxl)
+      padding 66px 0 14px 0
+
+  &__card-text
+    line-height 108% !important
+    letter-spacing: -1px
+
+  &__card-bg-1
+    background-image: url('../images/reasons-section-card-bg-1.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background-color #e3ce97
+
+  &__card-bg-2
+    background-color #FFF8F5
+    position relative
+
+  &__card-image-2
+    position: absolute
+    width 90px
+    height: auto
+    bottom: 0
+    right: 20px
+    +above($breakpoints.sm)
+      width 90px
+      height: auto
+      right: 20px
+    +above($breakpoints.md)
+      width: 160px;
+      right: 30px;
+    +above($breakpoints.xxl)
+      width 188px
+      right: 56px
+
+  &__card-image-3
+    position: absolute
+    width: 120px;
+    height: auto;
+    bottom: 10px;
+    right: 10px;
+    +above($breakpoints.sm)
+      width: 120px;
+      height: auto;
+      bottom: 10px;
+      right: 10px;
+    +above($breakpoints.md)
+      width: 170px;
+      right: 20px;
+      bottom: 20px;
+    +above($breakpoints.xxl)
+      width 220px
+      right: 31px
+      bottom: 23px
+
+  &__card-image-4
+    position: absolute
+    width: 96px;
+    height: auto;
+    bottom: 10px;
+    right: 0;
+    +above($breakpoints.sm)
+      width: 96px;
+      height: auto;
+      bottom: 10px;
+      right: 0;
+    +above($breakpoints.md)
+      width: 177px;
+      bottom: 10px;
+    +above($breakpoints.xxl)
+      width 234px
+      bottom: 28px
+
+  &__card-icon
+    width 30px
+    height: 30px
+    +above($breakpoints.md)
+      width 47px
+      height: 47px

@@ -1,0 +1,20 @@
+section.start-section
+  .wrapper
+    .start-section__container
+      img.start-section__icon-bg(src="images/start-section-icon-bg.png" loading="lazy" width="1547" height="1304" alt="icon")
+      .start-section__box
+        h2.start-section__title.font-w-b-regular.font-s-26.text-center
+          span.color-gold Сделайте первый шаг, 
+          br.no-br
+          | узнайте лучшие места 
+          br.no-br
+          | для открытия ARETA FLOWERS
+        .start-section__sub-title.font-s-18.text-center
+          span.color-gold Просто укажите название вашего города 
+          br.no-br
+          | и получите список удачных локаций
+        form.start-section__form(data-feedback-form)
+          input.input.start-item(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+          input.input.start-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.start-item(type="submit") Получить список
+      img.start-section__img(src="images/start-section-img.jpg" loading="lazy" width="1884" height="1304" alt="image")

@@ -1,0 +1,21 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-black.font-s-42
+        | Откройте детский клуб 
+        br.no-br
+        | по франшизе «BIG BOSS» 
+        br.no-br
+        | и зарабатывайте 
+        br.no-br
+        | от 340 000 ₽ ежемесячно
+      .main-section__sub-title.font-w-medium.font-s-20
+        | Получите подробную презентацию бизнеса 
+        br.no-br
+        | с цифрами и примерами в 1 клик
+      form.main-section__form(data-feedback-form)
+        input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn.main-item(type="submit") Получить
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1678" height="1376" alt="image")

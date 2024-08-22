@@ -1,0 +1,133 @@
+.about-section
+  // background-image: url('../images/about-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      padding 40px 0 0 0
+    +above($breakpoints.md)
+      padding 50px 0 0 0
+    +above($breakpoints.xxl)
+      padding 60px 0 0 0
+
+  &__img
+    width 300px
+    height: auto
+    margin 15px auto 15px
+    border-radius: 10px
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      width: 370px;
+      top: 94px;
+      right: 0;
+    +above($breakpoints.md)
+      border-radius: 20px
+      width: 450px;
+      top: 130px;
+    +above($breakpoints.xxl)
+      width 500px
+      top: 60px
+
+  &__img-title
+    position: absolute
+    top: 250px;
+    right: 78px;
+    +above($breakpoints.sm)
+      top: 296px;
+      right: 95px;
+    +above($breakpoints.md)
+      top: 371px;
+      right: 106px;
+    +above($breakpoints.xxl)
+      top: 327px;
+      right: 107px;
+
+  &__title-mobile
+    color: #352E4E
+    text-align: center
+    +above($breakpoints.sm)
+      display: none
+
+  &__title
+    display: none
+    +above($breakpoints.sm)
+      padding-bottom 15px
+      display: block
+
+  &__box
+    color: #352E4E
+    +above($breakpoints.sm)
+      width 340px
+    +above($breakpoints.md)
+      width 500px
+    +above($breakpoints.xxl)
+      width 630px
+
+  &__text
+    display: flex
+    flex-direction: column
+    gap: 5px
+    +above($breakpoints.xxl)
+      gap: 10px
+
+  &__text-item
+    text-align: center
+    +above($breakpoints.sm)
+      line-height 120%
+      text-align: start
+    +above($breakpoints.md)
+      line-height 150%
+
+  &__bottom
+    background-color #6D58B7
+    border-radius: 20px
+    padding 20px 15px 20px 15px
+    margin-top 20px
+    +above($breakpoints.sm)
+      background-image: url('../images/about-section-bottom-bg.jpg')
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      padding 30px 20px 38px 20px
+    +above($breakpoints.md)
+      margin-top 30px
+      padding 40px 20px 48px 20px
+    +above($breakpoints.xxl)
+      margin-top 40px
+      padding 50px 20px 78px 20px
+
+  &__form
+    padding-top: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    +above($breakpoints.sm)
+      margin 0 auto
+      width 410px
+      flex-direction: row
+      justify-content center
+      flex-wrap: wrap
+    +above($breakpoints.md)
+      width 594px
+      gap: 10px
+
+.about-item
+  width 260px !important
+  +above($breakpoints.sm)
+    width 200px !important
+  +above($breakpoints.md)
+    width 292px !important
+.about-item-btn
+  width 260px !important
+  +above($breakpoints.sm)
+    width 230px !important
+    margin 8px auto 0
+
