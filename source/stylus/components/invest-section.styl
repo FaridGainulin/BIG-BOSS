@@ -52,10 +52,6 @@
     pointer-events: auto;
     -webkit-focus-ring-color: transparent
     -webkit-tap-highlight-color: transparent
-    &:hover
-      user-select: none
-      outline: none
-      border: 3px solid #6d58b7;
     &:focus
       user-select: none
       outline: none
@@ -81,12 +77,6 @@
     background: transparent
 
   &__card
-    &:hover
-      p
-        touch-action: manipulation;
-        pointer-events: auto;
-        outline: none
-        color: #6D58B7
     &:focus
       p
         touch-action: manipulation;
@@ -128,6 +118,11 @@
       flex-direction: row
       flex-wrap: wrap
       justify-content center
+
+.card-quantity.active
+  border: 3px solid #6d58b7
+  p
+    color: #6D58B7
 
 .invest-item-1
   width 260px !important

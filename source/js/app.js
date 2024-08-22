@@ -57,10 +57,12 @@ const input = document.getElementById('quantityInput');
 
 cards.forEach(card => {
   card.addEventListener('click', () => {
+    cards.forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
     input.value = card.dataset.quantity;
   });
 
-  card.addEventListener('mouseover', () => {
-    input.value = card.dataset.quantity;
-  });
+  // card.addEventListener('mouseover', () => {
+  //   input.value = card.dataset.quantity;
+  // });
 });
